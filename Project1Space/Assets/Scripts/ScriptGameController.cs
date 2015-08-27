@@ -6,6 +6,9 @@ public class ScriptGameController : MonoBehaviour {
 
     public Text textDistanceSunPlayer;
 
+    GameObject playerCamera;
+    GameObject menuCamera;
+
     GameObject player;
     GameObject sun;
 
@@ -27,4 +30,6 @@ public class ScriptGameController : MonoBehaviour {
 
         textDistanceSunPlayer.text = "Sol Distance:" + distSunPlayer.magnitude.ToString("N2");
 	}
+
+    
 }
