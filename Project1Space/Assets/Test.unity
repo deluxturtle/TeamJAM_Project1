@@ -119,9 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &291952184
 MeshRenderer:
@@ -254,66 +254,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348700703}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &558930835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 558930836}
-  - 108: {fileID: 558930837}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &558930836
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558930835}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 873910940}
-  m_RootOrder: 0
---- !u!108 &558930837
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 558930835}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_Type: 2
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 1
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_NormalBias: .400000006
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &689114406
 Prefab:
   m_ObjectHideFlags: 0
@@ -368,6 +308,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &695401589 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 113888, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+  m_PrefabInternal: {fileID: 689114406}
+--- !u!64 &695401590
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695401589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: e7ebf7bab00fe574f8db110271851a7e, type: 3}
 --- !u!1 &784641683
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,9 +368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &784641686
 MeshRenderer:
@@ -503,9 +459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &859333593
 MeshRenderer:
@@ -550,128 +506,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859333590}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &873910936
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 873910940}
-  - 12: {fileID: 873910939}
-  - 26: {fileID: 873910938}
-  - 15: {fileID: 873910937}
-  m_Layer: 0
-  m_Name: Particle System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!15 &873910937
-EllipsoidParticleEmitter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873910936}
-  serializedVersion: 2
-  m_Enabled: 1
-  m_Emit: 1
-  minSize: .100000001
-  maxSize: .100000001
-  minEnergy: 1
-  maxEnergy: 1
-  minEmission: 100
-  maxEmission: 500
-  worldVelocity: {x: 0, y: 0, z: 0}
-  localVelocity: {x: 0, y: 0, z: 0}
-  rndVelocity: {x: .100000001, y: .100000001, z: .100000001}
-  emitterVelocityScale: .0500000007
-  tangentVelocity: {x: 0, y: 0, z: 0}
-  angularVelocity: 0
-  rndAngularVelocity: 0
-  rndRotation: 0
-  Simulate in Worldspace?: 1
-  m_OneShot: 1
-  m_Ellipsoid: {x: .100000001, y: .100000001, z: .100000001}
-  m_MinEmitterRange: 0
---- !u!26 &873910938
-ParticleRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873910936}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_CameraVelocityScale: 0
-  m_StretchParticles: 0
-  m_LengthScale: 2
-  m_VelocityScale: 0
-  m_MaxParticleSize: .25
-  UV Animation:
-    x Tile: 1
-    y Tile: 1
-    cycles: 1
---- !u!12 &873910939
-ParticleAnimator:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873910936}
-  Does Animate Color?: 1
-  colorAnimation[0]:
-    serializedVersion: 2
-    rgba: 184549375
-  colorAnimation[1]:
-    serializedVersion: 2
-    rgba: 3036676001
-  colorAnimation[2]:
-    serializedVersion: 2
-    rgba: 4292869888
-  colorAnimation[3]:
-    serializedVersion: 2
-    rgba: 3036640768
-  colorAnimation[4]:
-    serializedVersion: 2
-    rgba: 184484352
-  worldRotationAxis: {x: 0, y: 0, z: 0}
-  localRotationAxis: {x: 0, y: 0, z: 0}
-  sizeGrow: 0
-  rndForce: {x: 0, y: 0, z: 0}
-  force: {x: 0, y: 0, z: 0}
-  damping: 1
-  stopSimulation: 0
-  autodestruct: 0
---- !u!4 &873910940
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873910936}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 117.730225, y: -.0140000004, z: .953999996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 558930836}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &890408640
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,9 +550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &890408643
 MeshRenderer:
@@ -838,9 +672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &1024716783
 MeshRenderer:
@@ -929,9 +763,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &1586646609
 MeshRenderer:
@@ -1171,9 +1005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 291952187}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2042519434
 MeshRenderer:
@@ -1262,9 +1096,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2094944562
 MeshRenderer:
@@ -1353,9 +1187,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
   orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2145267557
 MeshRenderer:
