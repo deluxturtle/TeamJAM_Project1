@@ -4,14 +4,15 @@ using UnityEngine.UI;
 
 //@Author:   Andrew Seba
 //@Date:     8/28/2015
+//Description: Holds and controlls ship distance from sun
 public class ScriptGameController : MonoBehaviour {
 
     public Text textDistanceSunPlayer;
 
-    [Tooltip("Place your Camera that follows the player here.")]
-    GameObject playerCamera;
-    [Tooltip("Place your Camera that you want to use to view behind the menu.")]
-    GameObject menuCamera;
+    //[Tooltip("Place your Camera that follows the player here.")]
+    //GameObject playerCamera;
+    //[Tooltip("Place your Camera that you want to use to view behind the menu.")]
+    //GameObject menuCamera;
     
     GameObject player;
     GameObject sun;

@@ -310,10 +310,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &291952184
 MeshRenderer:
@@ -888,10 +888,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &784641686
 MeshRenderer:
@@ -1048,10 +1048,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &859333593
 MeshRenderer:
@@ -1139,10 +1139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &890408643
 MeshRenderer:
@@ -1261,10 +1261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &1024716783
 MeshRenderer:
@@ -1909,10 +1909,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &1586646609
 MeshRenderer:
@@ -2433,10 +2433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 291952187}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2042519434
 MeshRenderer:
@@ -2588,10 +2588,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2094944562
 MeshRenderer:
@@ -2679,10 +2679,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalVelocity: 5
-  inclinationMax: 4
-  inclinationMin: 1
-  inclination: 0
+  orbitalAxis: 0
+  velocityMax: 0
+  velocityMin: 0
+  velocity: 0
   rotationVelocity: 10
 --- !u!23 &2145267557
 MeshRenderer:
