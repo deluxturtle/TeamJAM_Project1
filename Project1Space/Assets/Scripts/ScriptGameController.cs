@@ -9,20 +9,31 @@ public class ScriptGameController : MonoBehaviour {
 
     public Text textDistanceSunPlayer;
 
+    public GameObject respawnMenu;
+
     //[Tooltip("Place your Camera that follows the player here.")]
     //GameObject playerCamera;
     //[Tooltip("Place your Camera that you want to use to view behind the menu.")]
     //GameObject menuCamera;
     
-    GameObject player;
-    GameObject sun;
+    //holds player and sun gameobject
+    [Tooltip("Place the Player prefab here.")]
+    public GameObject player;
+    [Tooltip("Place the Sun prefab here.")]
+    public GameObject sun;
+
 
     Vector3 distSunPlayer;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        sun = GameObject.Find("Sun");
+        if(player == null) {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+        if(sun == null)
+        {
+            sun = GameObject.Find("Sun");
+        }
     }
 
 	// Update is called once per frame
@@ -35,7 +46,35 @@ public class ScriptGameController : MonoBehaviour {
         
 
         textDistanceSunPlayer.text = "Sol Distance:" + distSunPlayer.magnitude.ToString("N2");
+
+        if(player == null && respawnMenu.gameObject.activeInHierarchy == false)
+        {
+            respawnMenu.gameObject.SetActive(enabled);
+        }
 	}
 
+
+    //Click to change ship color
+    //Just relized will use invoke for menu popping up to respawn.
+    //IEnumerator WaitForClick()
+    //{
+    //    while (canChangeColors)
+    //    {
+    //        if (Input.GetMouseButton(0))
+    //        {
+    //            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //            RaycastHit[] hits;
+    //            hits = Physics.RaycastAll(ray, 100f);
+
+    //            for (int i = 0; i < hits.Length; i++)
+    //            {
+    //                if (hits[i].collider.gameObject == GameObject.Find("Ship"))
+    //                {
+    //                    hits[i].collider.gameObject.GetComponent<Renderer>().material.SetColor("Color", Color.white);
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
     
 }
