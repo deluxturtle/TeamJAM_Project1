@@ -310,8 +310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -888,8 +888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -1048,8 +1048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -1139,8 +1139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -1261,8 +1261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -1909,8 +1909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .620000005
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -2588,8 +2588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
+  orbitalAxis: 1
+  velocityMax: .400000006
   velocityMin: 0
   velocity: 0
   rotationVelocity: 10
@@ -2679,9 +2679,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbitPoint: {fileID: 348700704}
-  orbitalAxis: 0
-  velocityMax: 0
-  velocityMin: 0
+  orbitalAxis: 1
+  velocityMax: .600000024
+  velocityMin: .200000003
   velocity: 0
   rotationVelocity: 10
 --- !u!23 &2145267557
