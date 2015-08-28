@@ -87,23 +87,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &41639990 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 113888, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-  m_PrefabInternal: {fileID: 689114406}
---- !u!114 &41639995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 41639990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a10c9f1f2d290a4f8b235f5e25da1e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5.1500001
-  rotateSpeed: 52.7000008
 --- !u!1 &171908146
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,149 +731,45 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_OneShot
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_OneShot
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 468730, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.0549999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 2062656, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_ClearFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 113888, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638614, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631136, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: minEnergy
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: minEnergy
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxEnergy
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxEnergy
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
       propertyPath: localVelocity.y
-      value: .5
+      value: .100000001
       objectReference: {fileID: 0}
     - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
       propertyPath: localVelocity.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: emitterVelocityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: emitterVelocityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638614, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_ReceiveShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631136, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_ReceiveShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638614, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LengthScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631136, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LengthScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxEmission
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxEmission
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 407386, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .131200001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: angularVelocity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: angularVelocity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_MinEmitterRange
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_MinEmitterRange
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 496756, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -.215000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 468730, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -.215000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 496756, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.0160000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 468730, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.0160000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638614, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_MaxParticleSize
-      value: .100000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631136, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: m_MaxParticleSize
       value: .100000001
       objectReference: {fileID: 0}
     - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: minSize
-      value: .200000003
+      propertyPath: worldVelocity.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: minSize
-      value: .200000003
+      propertyPath: worldVelocity.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxSize
-      value: .200000003
+      propertyPath: worldVelocity.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
-      propertyPath: maxSize
-      value: .200000003
+      propertyPath: worldVelocity.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+      propertyPath: worldVelocity.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+      propertyPath: worldVelocity.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599942, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+      propertyPath: Simulate in Worldspace?
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553052, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+      propertyPath: Simulate in Worldspace?
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
