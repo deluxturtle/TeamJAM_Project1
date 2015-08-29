@@ -38,12 +38,9 @@ public class ScriptGameController : MonoBehaviour {
     public Camera mainCamera;
 
 
-<<<<<<< HEAD
     //Private Variables
     GameObject sun;
-=======
-    
->>>>>>> master
+
     GameObject ship;
     Vector3 distSunPlayer;
     bool inPlay = false;
