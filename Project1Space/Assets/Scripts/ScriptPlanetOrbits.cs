@@ -7,11 +7,11 @@ public class ScriptPlanetOrbits : MonoBehaviour
     public Transform orbitPoint;
 
     [Tooltip("Axis of Orbit")]
-    public float orbitalAxis;
+    public float orbitalAxis = 1;
     [Tooltip("Maximum Orbital Velecity")]
-	public float velocityMax;
+	public float velocityMax = 0.4f; // Added a default incase of scene data loss. -Andrew
     [Tooltip("Minimum Orbital Velecity")]
-	public float velocityMin;
+	public float velocityMin = 0.2f; // Added a default incase of scene data loss. -Andrew
     [Tooltip("Current Orbital Velecity")]
     public float velocity;
 

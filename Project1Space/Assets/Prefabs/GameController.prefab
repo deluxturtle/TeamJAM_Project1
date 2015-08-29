@@ -40,6 +40,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDistanceSunPlayer: {fileID: 0}
+  respawnMenu: {fileID: 0}
+  player: {fileID: 113888, guid: 9ca7d9ae820842449905e4b4760147cf, type: 2}
+  sun: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
