@@ -44,6 +44,7 @@ public class ScriptGameController : MonoBehaviour {
 
     void Start()
     {
+
         //Init temp respawn variable
         timeLeft = respawnTime;
         textTimeLeft.text = timeLeft.ToString();
@@ -99,6 +100,7 @@ public class ScriptGameController : MonoBehaviour {
 
         mainCamera.transform.parent = ship.transform;
         mainCamera.transform.rotation = ship.transform.rotation;
+
         inPlay = true;
     }
 
@@ -127,8 +129,10 @@ public class ScriptGameController : MonoBehaviour {
             ship.transform.rotation = spawnPoint.transform.rotation;
 
             //Set camera to ship.
+
             mainCamera.transform.parent = ship.transform;
             mainCamera.transform.rotation = ship.transform.rotation;
+
 
             timeLeft = respawnTime;
             inPlay = true;
