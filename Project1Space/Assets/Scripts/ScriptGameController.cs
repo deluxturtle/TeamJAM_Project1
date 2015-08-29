@@ -7,45 +7,49 @@ using UnityEngine.UI;
 //Description: Holds and controlls ship distance from sun
 public class ScriptGameController : MonoBehaviour {
 
-    [Tooltip("Place your ship spawn point here.")]
+    [Header("Spawn Location")]
+    [Tooltip("Place your ship spawn gameObject here.")]
     public GameObject spawnPoint;
 
+    [Header("Respawn Options")]
     [Tooltip("Time it takes to respawn after clicking the respawn button.")]
     public int respawnTime = 5;
 
+    [Header("UI Settings")]
     [Tooltip("Place the respawn UI messege here with Text_TimeLeft")]
     public GameObject respawnCountdown;
 
     [Tooltip("Place the text object for time left to respawn here.(Under The Panel RespawnMenu.")]
     public Text textTimeLeft;
 
-    private int timeLeft;
+    [Tooltip("Place your respawn menu here.")]
+    public GameObject respawnMenu;
 
     [Tooltip("Place your distance from Sun Text object here.")]
     public Text textDistanceSunPlayer;
 
-    [Tooltip("Place your respawn menu here.")]
-    public GameObject respawnMenu;
 
-    bool inPlay = false;
-
-    [Tooltip("Place your camera that you want on the ship.")]
-    public Camera mainCamera;
-
+    [Header("Prefab Items")]
     [Tooltip("Place the Player prefab here.")]
     public GameObject player;
 
-    [Tooltip("Place the Sun prefab here.")]
-    public GameObject sun;
+    [Header("Misc")]
+    [Tooltip("Place your camera that you want on the ship.")]
+    public Camera mainCamera;
 
+
+    //Private Variables
+    GameObject sun;
     GameObject ship;
-
     Vector3 distSunPlayer;
+    bool inPlay = false;
+    private int timeLeft;
 
     void Start()
     {
 
         //Init temp respawn variable
+
         timeLeft = respawnTime;
         textTimeLeft.text = timeLeft.ToString();
 
@@ -57,6 +61,10 @@ public class ScriptGameController : MonoBehaviour {
         if(sun == null)
         {
             sun = GameObject.Find("Sun");
+        }
+        else
+        {
+            Debug.Log("No \"Sun\" to be found in the scene!");
         }
     }
 
@@ -110,9 +118,7 @@ public class ScriptGameController : MonoBehaviour {
     public void _Respawn()
     {
         InvokeRepeating("CountDown", 1, 1);
-        Debug.Log("Respawn invoked!");
         respawnCountdown.SetActive(true);
-        Debug.Log("RespawnMessege should pop up.");
     }
 
     /// <summary>
@@ -140,7 +146,6 @@ public class ScriptGameController : MonoBehaviour {
         }
         else
         {
-            Debug.Log(timeLeft);
             timeLeft -= 1;
             textTimeLeft.text = timeLeft.ToString();
         }
