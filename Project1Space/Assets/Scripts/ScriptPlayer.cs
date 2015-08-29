@@ -29,4 +29,18 @@ public class ScriptPlayer : MonoBehaviour {
         transform.Translate(0, 0, fowardTranslate);
         
     }
+
+    //@Author Marshall "AgentRonin316" Mason
+    [Tooltip("Place explosion prefab here")]
+    public GameObject explosion;
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Sun" || other.tag == "TerrestrialPlanet" || other.tag == "GasGiant")
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
+            GameObject.FindGameObjectWithTag("MainCamera").transform.parent = null;
+            Destroy(this.gameObject);
+        }
+    }
 }

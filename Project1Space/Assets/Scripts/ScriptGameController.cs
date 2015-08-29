@@ -38,8 +38,12 @@ public class ScriptGameController : MonoBehaviour {
     public Camera mainCamera;
 
 
+<<<<<<< HEAD
     //Private Variables
     GameObject sun;
+=======
+    
+>>>>>>> master
     GameObject ship;
     Vector3 distSunPlayer;
     bool inPlay = false;
@@ -82,7 +86,14 @@ public class ScriptGameController : MonoBehaviour {
                 sun.transform.position.z - ship.transform.position.z);
             textDistanceSunPlayer.text = "Sol Distance:" + distSunPlayer.magnitude.ToString("N2");
 
-
+            //Begin Marshall's work for system escape prevention
+            if (distSunPlayer.magnitude > 700)
+            {
+                Instantiate(ship.GetComponent<ScriptPlayer>().explosion, ship.transform.position, ship.transform.rotation);
+                GameObject.FindGameObjectWithTag("MainCamera").transform.parent = null;
+                Destroy(ship);
+            }
+            //End Marshall's code
         }
 
         if (ship != null)
