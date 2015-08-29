@@ -29,12 +29,4 @@ public class ScriptPlayer : MonoBehaviour {
         transform.Translate(0, 0, fowardTranslate);
         
     }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject.tag == "GasGiant" || col.gameObject.tag == "TerrestialPlanet" || col.gameObject.tag == "Sun")
-        {
-            Destroy(gameObject);
-        }
-    }
 }
