@@ -187,7 +187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491472, guid: 5c995e186b24d9540b9ecd77cae59da9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 183020, guid: 5c995e186b24d9540b9ecd77cae59da9, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -2610,9 +2610,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1861622764}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1201313890}
+        m_MethodName: _Respawn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2621,9 +2621,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1201313890}
-        m_MethodName: _Respawn
-        m_Mode: 1
+      - m_Target: {fileID: 1861622764}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

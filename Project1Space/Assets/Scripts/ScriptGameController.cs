@@ -112,6 +112,8 @@ public class ScriptGameController : MonoBehaviour {
     /// </summary>
     public void _Spawn()
     {
+        CancelInvoke("CountDown");
+
         ship = Instantiate(player, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         //set rotation
         ship.transform.rotation = spawnPoint.transform.rotation;
@@ -120,6 +122,8 @@ public class ScriptGameController : MonoBehaviour {
         mainCamera.transform.rotation = ship.transform.rotation;
 
         inPlay = true;
+        respawnCountdown.gameObject.SetActive(false);
+
     }
 
     /// <summary>
@@ -139,20 +143,9 @@ public class ScriptGameController : MonoBehaviour {
 
         if(timeLeft <= 0)
         {
-            CancelInvoke("CountDown");
-            ship = Instantiate(player, spawnPoint.transform.position, Quaternion.identity) as GameObject;
-            //set rotation
-            ship.transform.rotation = spawnPoint.transform.rotation;
-
-            //Set camera to ship.
-
-            mainCamera.transform.parent = ship.transform;
-            mainCamera.transform.rotation = ship.transform.rotation;
-
-
             timeLeft = respawnTime;
-            inPlay = true;
-            respawnCountdown.gameObject.SetActive(false);
+            textTimeLeft.text = timeLeft.ToString();
+            _Spawn();
         }
         else
         {
@@ -170,7 +163,7 @@ public class ScriptGameController : MonoBehaviour {
     {
         while (inPlay == false)
         {
-            if (Input.GetButtonDown("Submit") && respawnMenu != false)
+            if (Input.GetButtonDown("Submit") && respawnMenu.activeInHierarchy == true)
             {
                 respawnMenu.SetActive(false);
                 _Respawn();
@@ -204,6 +197,7 @@ public class ScriptGameController : MonoBehaviour {
     //                }
     //            }
     //        }
+    //      yield return null;
     //    }
     //}
     
