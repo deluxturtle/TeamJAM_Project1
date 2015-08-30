@@ -2089,6 +2089,7 @@ GameObject:
   - 224: {fileID: 1745490939}
   - 222: {fileID: 1745490941}
   - 114: {fileID: 1745490940}
+  - 111: {fileID: 1745490942}
   m_Layer: 5
   m_Name: Panel_Title
   m_TagString: Untagged
@@ -2141,6 +2142,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745490938}
+--- !u!111 &1745490942
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745490938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 50d2cd075adf4db4cadffb0cb991efbc, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 50d2cd075adf4db4cadffb0cb991efbc, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1747323447
 GameObject:
   m_ObjectHideFlags: 0
