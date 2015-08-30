@@ -67,6 +67,7 @@ public class ScriptGameController : MonoBehaviour {
         {
             Debug.Log("No \"Sun\" to be found in the scene!");
         }
+
     }
 
 
@@ -102,6 +103,7 @@ public class ScriptGameController : MonoBehaviour {
         {
             inPlay = false;
             respawnMenu.SetActive(true);
+            StartCoroutine("WaitForInput");
         }
 	}
 
@@ -157,6 +159,29 @@ public class ScriptGameController : MonoBehaviour {
             timeLeft -= 1;
             textTimeLeft.text = timeLeft.ToString();
         }
+    }
+
+
+    /// <summary>
+    /// Coroutine for enter to accept on the respawn menu and escape to quit the game
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator WaitForInput()
+    {
+        while (inPlay == false)
+        {
+            if (Input.GetButtonDown("Submit") && respawnMenu != false)
+            {
+                respawnMenu.SetActive(false);
+                _Respawn();
+            }
+            if (Input.GetButtonDown("Cancel"))
+            {
+                Application.Quit();
+            }
+            yield return null;
+        }
+        
     }
 
     //Click to change ship color
