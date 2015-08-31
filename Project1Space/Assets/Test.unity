@@ -187,7 +187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491472, guid: 5c995e186b24d9540b9ecd77cae59da9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 183020, guid: 5c995e186b24d9540b9ecd77cae59da9, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -2160,6 +2160,7 @@ GameObject:
   - 224: {fileID: 1745490939}
   - 222: {fileID: 1745490941}
   - 114: {fileID: 1745490940}
+  - 111: {fileID: 1745490942}
   m_Layer: 5
   m_Name: Panel_Title
   m_TagString: Untagged
@@ -2212,6 +2213,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745490938}
+--- !u!111 &1745490942
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745490938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 50d2cd075adf4db4cadffb0cb991efbc, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 50d2cd075adf4db4cadffb0cb991efbc, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1747323447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,7 +2287,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You have exploded.
+  m_Text: "You have exploded.\nPress Enter\nor \nPress Escape to Quit"
 --- !u!222 &1747323450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2665,9 +2681,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1861622764}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1201313890}
+        m_MethodName: _Respawn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2676,9 +2692,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1201313890}
-        m_MethodName: _Respawn
-        m_Mode: 1
+      - m_Target: {fileID: 1861622764}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
